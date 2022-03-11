@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarta Guapa - ¡Haz tu pedido!</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="UpperHead">
+    <img src="images/tartaguapa.gif" height="100px" alt="tartaguapa">
+    Tarta Guapa
+  </div>
+
+  <nav>
+    <a href="./index.html"><input class="btnPedido" type="button" value="Regresar a menú" name="btnRegresar"></a>
+    <h2>Sabores de los pasteles</h2>
+    <form action="./pedido.js" method="post">
+      <table class="center-obj zui-table">
+        <tr>
+          <td>
+            <img class="tablepicture" src="images/sabores/cheesecake.jpg" alt="cheesecake">
+          </td>
+          <td>
+            <dl>
+              <dt>Cheesecake</dt>
+              <dd>(nuestro especial pastel de queso)</dd>
+            </dl>
+          </td>
+          <td>
+            <input type="radio" name="tipoPastel" id="cheesecake" value="Cheesecake">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="tablepicture" src="images/sabores/chocolate.jpg" alt="chocolate">
+          </td>
+          <td>
+            <dl>
+              <dt>Chocolate</dt>
+              <dd>(con chocolate orgánico de Chiapas)</dd>
+            </dl>
+          </td>
+          <td>
+            <input type="radio" name="tipoPastel" id="chocolate" value="Chocolate">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="tablepicture" src="images/sabores/redvelvet.jpeg" alt="redvelvet">
+          </td>
+          <td>
+            <dl>
+              <dt>Red Velvet</dt>
+              <dd>(pastel especial redvelvet)</dd>
+            </dl>
+          </td>
+          <td>
+            <input type="radio" name="tipoPastel" id="redvelvet" value="redvelvet">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="tablepicture" src="images/sabores/tresleches.jpg" alt="tresleches">
+          </td>
+          <td>
+            <dl>
+              <dt>Tres leches</dt>
+              <dd>(el favorito de 3 leches)</dd>
+            </dl>
+          </td>
+          <td>
+            <input type="radio" name="tipoPastel" id="tresleches" value="tresleches">
+          </td>
+        </tr>
+      </table>
+      <br>
+      <hr>
+      <h2>Adornos de los pasteles</h2>
+      <table class="center-obj zui-table">
+        <tr>
+          <td>
+            <img class="tablepicture" src="images/decoraciones/decoracionchispas.jpg" alt="chispas">
+          </td>
+          <td>
+            Pastel con chispas
+          </td>
+          <td>
+            <input type="radio" name="adorno" id="chispas" value="chispas">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="tablepicture" src="images/decoraciones/decoracionfondant.jpg" alt="fondant">
+          </td>
+          <td>
+            Pastel con fondant
+          </td>
+          <td>
+            <input type="radio" name="adorno" id="fondant" value="fondant">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="tablepicture" src="images/decoraciones/decoracionfruta.jpg" alt="fruta">
+          </td>
+          <td>
+            Pastel con frutas
+          </td>
+          <td>
+            <input type="radio" name="adorno" id="frutas" value="frutas">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="tablepicture" src="images/decoraciones/decoracionletras.jpg" alt="letras comestibles">
+          </td>
+          <td>
+            Pastel con letras comestibles
+          </td>
+          <td>
+            <input type="radio" name="adorno" id="letras" value="letras">
+          </td>
+        </tr>
+      </table>
+      <br>
+      <hr>
+      <h2>Tamaños disponibles</h2>
+      <table class="center-obj zui-table">
+        <tr>
+          <td>
+            <img class="tablepicture" src="images/tamanios/pastelchico.png" alt="pastelchico">
+          </td>
+          <td>
+            Pastel chico
+          </td>
+          <td>
+            <input type="radio" name="tamanio" id="chico" value="chico">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="tablepicture" src="images/tamanios/pastelmediano.jpg" alt="pastelmediano">
+          </td>
+          <td>
+            Pastel mediano
+          </td>
+          <td>
+            <input type="radio" name="tamanio" id="mediano" value="mediano">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="tablepicture" src="images/tamanios/pastelgrande.jpg" alt="pastelgrande">
+          </td>
+          <td>
+            Pastel grande
+          </td>
+          <td>
+            <input type="radio" name="tamanio" id="grande" value="grande">
+          </td>
+        </tr>
+      </table><br>
+      <div style="text-align: center;">
+        <input class="btnPedido" type="reset" value="Reiniciar pedido"> <br><br>
+        <input class="btnPedido" type="submit" value="Hacer pedido">
+      </div>
+    </form>
+  </nav>
+  <footer>
+    <a href="mailto:lupita@tartaguapa.com.mx">Contacto con la pastelera</a> |
+    Teléfono: 222-222-2222 <br>
+    Dirección: Puebla, Puebla 72400 <br>
+    ¡Los mejores pasteles de la ciudad!
+  </footer>
+
+</body>
+
+</html>
